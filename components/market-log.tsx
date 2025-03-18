@@ -18,8 +18,9 @@ export default function MarketLog({ logs }: MarketLogProps) {
     }
   }, [logs])
 
-  // Format timestamp
-  const formatTime = (timestamp: string) => {
+  // Format timestamp with a fallback
+  const formatTime = (timestamp?: string) => {
+    if (!timestamp) return "Invalid Date"
     const date = new Date(timestamp)
     return `${date.getHours()}:${date.getMinutes().toString().padStart(2, "0")}:${date.getSeconds().toString().padStart(2, "0")}`
   }
