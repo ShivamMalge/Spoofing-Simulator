@@ -2,10 +2,9 @@
 
 > **An educational simulator to visualize spoofing, order book manipulation, and the chaos behind the 2010 Flash Crash.**
 
-![Spoofing Simulator Banner](https://your-demo-link.com/banner.png) <!-- Optional: Replace with your actual banner image -->
 
-![GitHub Repo Stars](https://img.shields.io/github/stars/your-username/spoofing-simulator?style=social)
-![License](https://img.shields.io/github/license/your-username/spoofing-simulator)
+![GitHub Repo Stars](https://img.shields.io/github/stars/ShivamMalge/spoofing-simulator?style=social)
+![License](https://img.shields.io/github/license/ShivamMalge/spoofing-simulator)
 ![Built with Next.js](https://img.shields.io/badge/next.js-powered-blue?logo=next.js)
 ![Visualized using D3.js](https://img.shields.io/badge/visualized%20with-D3.js-green?logo=d3.js)
 
@@ -67,7 +66,7 @@ npm install
 
 # Start the dev server
 npm run dev
-
+```
 
 ## 📚 References
 
@@ -84,10 +83,9 @@ npm run dev
 **Shivam Malge**  
 *Finance x AI x Web Dev*
 
-- **Portfolio**: [shivammalge.vercel.app](https://shivammalge.vercel.app)  
-- **GitHub**: [github.com/your-username](https://github.com/your-username)  
+- **GitHub**: [github.com/ShivamMalge](https://github.com/ShivamMalge)  
 - **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-- **Twitter**: [@your-handle](https://twitter.com/your-handle)
+- **Instagram**: [@your-handle](https://twitter.com/your-handle)
 
 ---
 
