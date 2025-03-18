@@ -156,7 +156,7 @@ export function simulateMarketReaction(
 
   if (newOrder.side === OrderSide.SELL) {
     // Large sell order causes some buy orders to retreat
-    updatedBuyOrders = updatedBuyOrders.filter((_, i) => {
+    updatedBuyOrders = updatedBuyOrders.filter(() => {
       // Higher reaction strength means more orders are removed
       return Math.random() > reactionStrength * 0.5
     })
@@ -173,7 +173,7 @@ export function simulateMarketReaction(
     })
   } else {
     // Large buy order causes some sell orders to retreat
-    updatedSellOrders = updatedSellOrders.filter((_, i) => {
+    updatedSellOrders = updatedSellOrders.filter(() => {
       return Math.random() > reactionStrength * 0.5
     })
 
@@ -191,4 +191,5 @@ export function simulateMarketReaction(
 
   return { updatedBuyOrders, updatedSellOrders }
 }
+
 
