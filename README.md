@@ -85,7 +85,7 @@ npm run dev
 
 - **GitHub**: [github.com/ShivamMalge](https://github.com/ShivamMalge)  
 - **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-- **Instagram**: [@your-handle](https://twitter.com/your-handle)
+- **Instagram**: [@epsilon_edge]([https://twitter.com/your-handle](https://www.instagram.com/epsilon_edge?igsh=MTduNDFqdWd5NGlwMQ==))
 
 ---
 
