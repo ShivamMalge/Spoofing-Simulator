@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between py-4">
           <h1 className="text-2xl font-bold">Market Spoofing Simulator</h1>
           <div className="flex items-center gap-4">
-            <span className="text-sm text-muted-foreground">Educational Platform</span>
+            <span className="text-sm text-muted-foreground">ONLY FOR EDUCATIONAL PURPOSE</span>
           </div>
         </div>
       </header>
@@ -31,7 +31,7 @@ export default function Home() {
             </p>
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Market Education Platform. All rights reserved.
+            © {new Date().getFullYear()} Shivam Malge. All rights reserved.
           </p>
         </div>
       </footer>
