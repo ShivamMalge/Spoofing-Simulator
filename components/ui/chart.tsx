@@ -1,6 +1,6 @@
 "use client"
 
-import type React from "react"
+import type { ReactNode } from "react"
 import {
   LineChart as RechartsLineChart,
   Line as RechartsLine,
@@ -10,6 +10,7 @@ import {
   Tooltip as RechartsTooltip,
   ResponsiveContainer as RechartsResponsiveContainer,
   ReferenceLine as RechartsReferenceLine,
+  TooltipProps
 } from "recharts"
 
 export const LineChart = RechartsLineChart
@@ -21,15 +22,15 @@ export const Tooltip = RechartsTooltip
 export const ResponsiveContainer = RechartsResponsiveContainer
 export const ReferenceLine = RechartsReferenceLine
 
-export const ChartContainer = ({ children }: { children: React.ReactNode }) => {
+export const ChartContainer = ({ children }: { children: ReactNode }) => {
   return <div className="w-full h-full">{children}</div>
 }
 
-export const ChartTooltipContent = ({ children }: { children: React.ReactNode }) => {
+export const ChartTooltipContent = ({ children }: { children: ReactNode }) => {
   return <div className="bg-card p-2 rounded-md shadow-md">{children}</div>
 }
 
-export const ChartTooltip = ({ content, ...props }: any) => {
+// Define a proper type for ChartTooltip
+export const ChartTooltip = ({ content, ...props }: TooltipProps<number, string>) => {
   return <RechartsTooltip content={content} {...props} />
 }
-
