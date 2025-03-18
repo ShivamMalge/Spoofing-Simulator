@@ -25,7 +25,7 @@ export default function SpoofingSimulator() {
   const [currentPrice, setCurrentPrice] = useState(100)
   const [isSimulationRunning, setIsSimulationRunning] = useState(false)
   const [simulationStep, setSimulationStep] = useState(0)
-  const [simulationSpeed, setSimulationSpeed] = useState(1000) // ms between steps
+  const simulationSpeed = 1000 // ms between steps
   const simulationInterval = useRef<NodeJS.Timeout | null>(null)
   const [simulationComplete, setSimulationComplete] = useState(false)
 
@@ -65,7 +65,7 @@ export default function SpoofingSimulator() {
       })
       setSimulationComplete(false)
     }
-  }, [simulationComplete, toast])
+  }, [simulationComplete, toast, simulationStep])
 
   // Update price based on order book
   useEffect(() => {
@@ -85,7 +85,7 @@ export default function SpoofingSimulator() {
         setPriceHistory((prev) => prev.slice(-100))
       }
     }
-  }, [buyOrders, sellOrders])
+  }, [buyOrders, sellOrders, currentPrice, priceHistory.length])
 
   const addLog = (log: LogEntry) => {
     setMarketLogs((prev) => [
@@ -638,4 +638,5 @@ export default function SpoofingSimulator() {
     </div>
   )
 }
+
 
